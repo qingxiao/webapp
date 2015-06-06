@@ -1,0 +1,8 @@
+<% include ../layout/header %>
+<h1>categories</h1>
+<ul>
+    <% playlists.items.forEach(function(item){ %>
+        <li><a href="/category/<%= item.id %>"><%= item.name %></a></li>
+    <% })%>
+</ul>
+<% include ../layout/footer %>
