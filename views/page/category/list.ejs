@@ -3,6 +3,7 @@
 <h1><%= category.name %></h1>
 <ul>
     <% playList.playlists.items.forEach(function(item){ %>
+    <%= JSON.stringify(item) %>
     <li><a href="/category/<%= item.id %>"><%= item.name %></a></li>
     <% })%>
 </ul>
