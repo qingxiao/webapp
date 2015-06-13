@@ -1,0 +1,10 @@
+<% var title='playlist' %>
+<% include ../layout/header %>
+<h1>playlist</h1>
+<ul>
+    <% aData.items.forEach(function(item){ %>
+    <%= JSON.stringify(item) %>
+        <li><a href="/track/<%= item.track.id %>"><%= item.track.name %></a></li>
+    <% }) %>
+</ul>
+<% include ../layout/footer %>
